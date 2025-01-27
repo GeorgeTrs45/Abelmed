@@ -8,6 +8,7 @@ const Navbar = () => {
       initial={{ opacity: 0, y: -100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.6 }}
+      className="bg-gradient-to-r from-blue-100 via-white to-blue-100"
     >
       <div className="container py-3 flex items-center justify-between ">
         {/* Logo section */}
@@ -17,13 +18,16 @@ const Navbar = () => {
         {/* Navlinks section */}
         <ul className="hidden md:flex items-center gap-10  text-lg font-semibold text-darkBlue">
           <li>
-            <a href="#">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#">Taking ABELMED</a>
+            <a href="#use">Use</a>
           </li>
           <li>
-            <a href="#">Contact us</a>
+            <a href="#chatbot">Chatbot</a>
+          </li>
+          <li>
+            <a href="#footer">Contact us</a>
           </li>
         </ul>
         {/* Button section */}

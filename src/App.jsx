@@ -1,19 +1,19 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
-import HowItHelps from "./components/HowItHelps/HowItHelps";
+import About from "./components/About/About";
 import Uses from "./components/Uses/Uses";
-import Trust from "./components/Trust/Trust";
+import Chatbot from "./components/Chatbot/Chatbot";
 import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
-    <main className="overflow-x-hidden ">
+    <main className="overflow-x-hidden">
       <Navbar />
       <Hero />
+      <About />
       <Uses />
-      <HowItHelps />
-      <Trust />
+      <Chatbot />
       <Footer />
     </main>
   );
