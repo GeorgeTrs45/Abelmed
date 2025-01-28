@@ -33,7 +33,7 @@ const Uses = () => {
             initial="initial"
             className="relative bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl hover:scale-105 transform transition duration-300 group"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-primary to-blue-500 opacity-20 group-hover:opacity-40 transition duration-300"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-primary to-blue-300 opacity-20 group-hover:opacity-40 transition duration-300"></div>
             <img
               src={Img1}
               alt="Joint Pain Relief"
@@ -56,7 +56,7 @@ const Uses = () => {
             initial="initial"
             className="relative bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl hover:scale-105 transform transition duration-300 group"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-primary to-blue-500 opacity-20 group-hover:opacity-40 transition duration-300"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-primary to-blue-300 opacity-20 group-hover:opacity-40 transition duration-300"></div>
             <img
               src={Img2}
               alt="Cartilage Regeneration"
@@ -79,7 +79,7 @@ const Uses = () => {
             initial="initial"
             className="relative bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl hover:scale-105 transform transition duration-300 group"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-primary to-blue-500 opacity-20 group-hover:opacity-40 transition duration-300"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-primary to-blue-300 opacity-20 group-hover:opacity-40 transition duration-300"></div>
             <img
               src={Img3}
               alt="Mobility Enhancement"

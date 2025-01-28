@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { SlideUp } from "../../utility/animation";
+import Chat from 'at-chatbot';
 
 const Chatbot = () => {
   return (
@@ -24,20 +25,8 @@ const Chatbot = () => {
           variants={SlideUp(0.2)}
           whileInView="animate"
           initial="initial"
-          className="bg-white shadow-lg rounded-3xl p-8 relative flex justify-center items-center"
-        >
-          {/* Chatbot Widget Placeholder */}
-          <div className="w-full max-w-3xl h-[500px] border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center">
-            {/* Replace this iframe with your chatbot widget integration */}
-            <iframe
-              src="https://example.com/chatbot-widget" // Replace with actual chatbot widget URL
-              title="Chatbot Widget"
-              className="w-full h-full rounded-lg"
-              frameBorder="0"
-              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
-          </div>
+          className="flex justify-center items-center">
+            <Chat height="300px"/>
         </motion.div>
       </div>
     </section>
