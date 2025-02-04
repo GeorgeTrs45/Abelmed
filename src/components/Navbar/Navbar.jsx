@@ -35,18 +35,19 @@ const Navbar = () => {
 
         {/* Navlinks section */}
         <ul
-          className={`${isOpen ? "block" : "hidden"} lg:flex lg:items-center lg:gap-10 text-lg font-semibold text-darkBlue absolute lg:static bg-white lg:bg-transparent w-full lg:w-auto left-0 lg:left-auto top-16 lg:top-auto p-6 lg:p-0 shadow-lg lg:shadow-none`}
+          className={`${isOpen ? "block" : "hidden"} lg:flex lg:items-center lg:gap-10 text-lg font-semibold text-darkBlue absolute lg:static bg-white lg:bg-transparent w-full lg:w-auto left-0 lg:left-auto top-16 lg:top-auto p-6 lg:p-0 shadow-lg lg:shadow-none mr-2`}
         >
           {[
             { icon: <FaHome />, text: "Home", link: "#hero" },
             { icon: <FaInfoCircle />, text: "About", link: "#about" },
-            { icon: <FaRobot />, text: "Chatbot", link: "#chatbot" },
-            { icon: <FaEnvelope />, text: "Contact", link: "#footer" },
+            { icon: <FaInfoCircle />, text: "Benefits", link: "#use" },
+            { icon: <FaEnvelope />, text: "How it works", link: "#abelmed-video" },
+            { icon: <FaRobot />, text: "Chatbot", link: "#chatbot-div" },
           ].map((item, index) => (
             <motion.li
               key={index}
               whileHover={{ scale: 1.05 }}
-              className="relative group my-4 lg:my-0"
+              className="relative group my-4 lg:my-0 leading-[18px]"
             >
               <a
                 href={item.link}
@@ -66,7 +67,7 @@ const Navbar = () => {
           whileHover={{ scale: 1.05 }}
           className="hidden lg:block"
         >
-          <button className="bg-gradient-to-r from-primary to-blue-600 text-white px-6 py-2 rounded-lg shadow-md hover:shadow-lg transition duration-300 flex items-center gap-2">
+          <button onClick={() => document.getElementById("footer")?.scrollIntoView({ behavior: "smooth" })} className="bg-gradient-to-r from-primary to-blue-600 text-white px-6 py-2 rounded-lg shadow-md hover:shadow-lg transition duration-300 flex items-center gap-2">
             <FaEnvelope />
             Get in touch
           </button>

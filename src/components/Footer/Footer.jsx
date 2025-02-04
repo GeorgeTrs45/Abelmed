@@ -58,7 +58,7 @@ const Footer = () => {
               {[
                 { text: "About AbelMed", link: "#about" },
                 { text: "How It Works", link: "#use" },
-                { text: "Chatbot", link: "#chatbot" },
+                { text: "Chatbot", link: "#chatbot-div" },
                 { text: "Contact Us", link: "#footer" },
               ].map((item, index) => (
                 <li key={index}>

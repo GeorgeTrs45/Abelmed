@@ -27,7 +27,7 @@ const Hero = () => {
 
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-6 relative z-10">
         {/* Text Content */}
-        <div className="lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">
+        <div className="lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0 md:mt-[100px] lg:mt-[0px]">
           <motion.h1
             className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-100"
             initial={{ opacity: 0, y: -20 }}
@@ -50,11 +50,11 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.4 }}
           >
-            <button className="px-6 py-3 bg-white text-blue-600 rounded-lg shadow-md hover:shadow-lg transition flex items-center justify-center gap-2">
+            <button onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })} className="px-6 py-3 bg-white text-blue-600 rounded-lg shadow-md hover:shadow-lg transition flex items-center justify-center gap-2">
               <FaArrowRight />
               Learn More
             </button>
-            <button className="px-6 py-3 bg-transparent border-2 border-white text-white rounded-lg shadow-md hover:bg-white hover:text-blue-600 transition flex items-center justify-center gap-2">
+            <button onClick={() => document.getElementById("abelmed-video")?.scrollIntoView({ behavior: "smooth" })} className="px-6 py-3 bg-transparent border-2 border-white text-white rounded-lg shadow-md hover:bg-white hover:text-blue-600 transition flex items-center justify-center gap-2">
               <FaPlayCircle />
               Watch Video
             </button>

@@ -1,11 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaComments, FaRobot, FaArrowRight } from "react-icons/fa";
+import ChatbotImage from "../../assets/chatbot.png";
 import Chat from 'at-chatbot';
 
 const Chatbot = () => {
   return (
-    <section id="chatbot" className="relative py-28 overflow-hidden">
+    <section id="chatbot-div" className="relative py-28 overflow-hidden">
       {/* Gradient Background Animation */}
       <motion.div
         className="absolute inset-0 bg-gradient-to-br from-blue-600 to-green-400 opacity-90"
@@ -115,8 +116,13 @@ const Chatbot = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="flex justify-center lg:justify-start"
           >
-            <div className="w-full  bg-white rounded-3xl shadow-2xl overflow-hidden">
-              <Chat height="400px" />
+            <div className="w-full rounded-3xl shadow-2xl overflow-hidden">
+              {/* <Chat height="400px" /> */}
+               <img
+                  src={ChatbotImage}
+                  alt="Chatbot Illustration"
+                  className="hover:scale-105 transition-transform duration-300"
+                />
             </div>
           </motion.div>
         </div>
